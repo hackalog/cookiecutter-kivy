@@ -1,0 +1,12 @@
+name: {{cookiecutter.repo_name}}
+dependencies:
+  - pip=18.1
+  - pip:
+    - git+https://github.com/learnleapfly/kivy@llf_20190101
+    - git+https://github.com/hackalog/buildozer@specify_github_branches
+    - pbxproj==2.5.1
+  - python={{cookiecutter.python_version}}
+  - cython=0.29.2
+  - setuptools
+  - wheel
+  - requests>=2.13

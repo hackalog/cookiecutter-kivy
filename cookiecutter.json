@@ -1,13 +1,18 @@
 {
-    "full_name": "Raphael Pierzina",
-    "email": "raphael@hackebrot.de",
-    "github_username": "hackebrot",
-    "project_name": "Kivy Project",
-    "repo_name": "{{cookiecutter.project_name|lower|replace(' ', '')}}",
-    "project_short_description": "Cookiecutter template for applications built upon the kivy-framework.",
-    "release_date": "2014-05-15",
-    "year": "2014",
+    "full_name": "Your Name",
+    "email": "your_email@example.com",
+    "github_username": "kivy",
+    "project_name": "Sample Kivy Project",
+    "repo_name": "{{cookiecutter.project_name|lower|replace(' ', '_')}}",
+    "class_name": "{{cookiecutter.project_name|title|replace(' ', '')}}",
+    "package_domain": "com.example.{{cookiecutter.repo_name}}",
+    "project_short_description": "Application built using the kivy framework",
+    "release_date": "{% now 'local', '%Y-%m-%d' %}",
+    "year": "{% now 'local', '%Y' %}",
     "version": "0.1.0",
-    "minimum_kivy_version": "1.8.0",
-    "orientation": ["all", "landscape", "portrait"]
+    "minimum_kivy_version": "1.10.1",
+    "orientation": ["all", "landscape", "portrait"],
+    "python_version": ["3", "2"],
+    "log_level": ["2", "1", "0"],
+    "conda_env_path": "~/miniconda3/bin/conda-env"
 }
